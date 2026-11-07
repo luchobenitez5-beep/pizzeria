@@ -1,10 +1,10 @@
- {
+{
   "name": "Pizzería El Vivero",
   "short_name": "El Vivero",
   "start_url": "/pizzeria/",
   "display": "standalone",
   "background_color": "#121212",
-  "theme_color": "#ff5722",
+  "theme_color": "#10b981",
   "icons": [
     {
       "src": "https://cdn-icons-png.flaticon.com/512/3132/3132693.png",
