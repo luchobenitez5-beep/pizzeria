@@ -536,7 +536,7 @@
             document.getElementById('bottom-bar-items-count').innerText = `(${totalItems} ${totalItems === 1 ? 'ítem' : 'ítems'})`;
             document.getElementById('drawer-items-count').innerText = `${totalItems} productos en el pedido`;
 
-            const costoEnvio = deliveryType === 'delivery' ? 1500 : 0;
+            const costoEnvio = deliveryType === 'delivery' ? 0 : 0;
             const totalFinal = subtotal + costoEnvio;
 
             const fmtSubtotal = '$' + subtotal.toLocaleString('es-AR');
