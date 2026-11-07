@@ -359,7 +359,7 @@
             // POSTRES
             { id: 401, nombre: 'Flan Casero', descripcion: 'Con dulce de leche repostero o crema.', precio: 5000, categoria: 'postres', imagen: 'https://files.catbox.moe/r99okm.jpg' },
             { id: 402, nombre: 'Tiramisú', descripcion: 'Receta tradicional italiana con café y cacao.', precio: 5000, categoria: 'postres', imagen: 'https://files.catbox.moe/ra238b.jpg' },
-            { id: 403, nombre: 'chesscke de frutilla', descripcion: ' Base de galletita, Queso crema, frutilla.', precio: 5000, categoria: 'postres', imagen: 'https://files.catbox.moe/bhi992.jpg' },
+            { id: 403, nombre: 'chesscake de frutilla', descripcion: ' Base de galletita, Queso crema, frutilla.', precio: 5000, categoria: 'postres', imagen: 'https://files.catbox.moe/bhi992.jpg' },
             { id: 404, nombre: 'budin de pan(1 porcion)', descripcion: '', precio: 5000, categoria: 'postres', imagen: 'https://files.catbox.moe/r99okm.jpg' },
             { id: 405, nombre: 'Chocotorta', descripcion: 'Porción individual súper cremosa de dulce de leche.', precio: 5000, categoria: 'postres', imagen: 'https://files.catbox.moe/r99okm.jpg' },
             { id: 406, nombre: 'oreo', descripcion: 'crema y galletitas.', precio: 5000, categoria: 'postres', imagen: 'https://files.catbox.moe/r99okm.jpg' }
@@ -544,7 +544,7 @@
 
             document.getElementById('cart-total').innerText = fmtSubtotal;
             document.getElementById('summary-subtotal').innerText = fmtSubtotal;
-            document.getElementById('summary-delivery').innerText = deliveryType === 'delivery' ? '$1.500' : 'Gratis';
+            document.getElementById('summary-delivery').innerText = deliveryType === 'delivery' ? 'Gratis' : 'Gratis';
             document.getElementById('summary-total').innerText = fmtTotal;
 
             calcularVuelto();
@@ -623,7 +623,7 @@
             const abonado = parseFloat(cashInput.value) || 0;
 
             let subtotal = carrito.reduce((sum, i) => sum + (i.precio * i.cantidad), 0);
-            let totalFinal = subtotal + (deliveryType === 'delivery' ? 1500 : 0);
+            let totalFinal = subtotal + (deliveryType === 'delivery' ? 0 : 0);
 
             if (abonado > totalFinal) {
                 const vuelto = abonado - totalFinal;
