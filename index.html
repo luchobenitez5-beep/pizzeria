@@ -366,30 +366,9 @@
             { id: 405, nombre: 'Chocotorta', descripcion: 'Porción individual súper cremosa de dulce de leche.', precio: 5000, categoria: 'postres', imagen: 'https://files.catbox.moe/r99okm.jpg' },
             { id: 406, nombre: 'oreo', descripcion: 'crema y galletitas.', precio: 5000, categoria: 'postres', imagen: 'https://files.catbox.moe/r99okm.jpg' },
 // TARTAS
-    {
-        id: 350,
-        nombre: 'Tarta de Jamón y Queso',
-        descripcion: 'Masa crujiente, abundante jamón cocido y mezcla de quesos fundidos.',
-        precio: 5000,
-        categoria: 'tartas',
-        imagen: 'https://files.catbox.moe/r99qkn.jpg'
-    },
-    {
-        id: 351,
-        nombre: 'Tarta de Acelga y Queso',
-        descripcion: 'Acelga fresca salteada con cebolla, ligue suave y queso gratinado por encima.',
-        precio: 5000,
-        categoria: 'tartas',
-        imagen: 'https://files.catbox.moe/r99qkn.jpg'
-    },
-    {
-        id: 352,
-        nombre: 'Tarta de Pollo',
-        descripcion: 'Jugoso relleno de pollo desmenuzado con verduras salteadas y un toque de queso.',
-        precio: 5000,
-        categoria: 'tartas',
-        imagen: 'https://files.catbox.moe/r99qkn.jpg'
-    },
+    { id: 350, nombre: 'Tarta de Jamón y Queso',descripcion: 'Masa crujiente, abundante jamón cocido y mezcla de quesos fundidos.', precio: 5000, categoria: 'tartas', imagen: 'https://files.catbox.moe/r99qkn.jpg' },
+    { id: 351, nombre: 'Tarta de Acelga y Queso', descripcion: 'Acelga fresca salteada con cebolla, ligue suave y queso gratinado por encima.', precio: 5000, categoria: 'tartas', imagen: 'https://files.catbox.moe/r99qkn.jpg' },
+    { id: 352, nombre: 'Tarta de Pollo', descripcion: 'Jugoso relleno de pollo desmenuzado con verduras salteadas y un toque de queso.',precio: 5000, categoria: 'tartas', imagen: 'https://files.catbox.moe/r99qkn.jpg' },
         ];
 
         // ESTADO GLOBAL
@@ -420,7 +399,7 @@
             }
 
             const categoriasMostrar = categoriaActual === 'todas' 
-                ? ['pizzas', 'empanadas', 'minutas', 'postres'] 
+                ? ['pizzas', 'empanadas', 'minutas', `tartas`, 'postres'] 
                 : [categoriaActual];
 
             categoriasMostrar.forEach(catKey => {
@@ -431,7 +410,8 @@
                     pizzas: { title: 'Pizzas', icon: 'fa-pizza-slice', color: 'text-orange-400' },
                     empanadas: { title: 'Empanadas ', icon: 'fa-stroopwafel', color: 'text-amber-400' },
                     minutas: { title: 'Minutas y Platos', icon: 'fa-utensils', color: 'text-emerald-400' },
-                    postres: { title: 'Postres Caseros', icon: 'fa-ice-cream', color: 'text-pink-400' }
+                    postres: { title: 'Postres Caseros', icon: 'fa-ice-cream', color: 'text-pink-400' },
+                    tartas: { title: 'Tartas', icon: 'fa-pie-chart', color: 'text-yellow-400' }
                 };
 
                 const catInfo = catTitles[catKey];
